@@ -2,13 +2,57 @@
 
 require 'RMagick'
 
+@synonyms = Hash[
+ "baby tatzelworm" => "baby gray dragon",
+ "baby amphitere" => "baby silver dragon",
+ "baby draken" => "baby red dragon",
+ "baby lindworm" => "baby white dragon",
+ "baby sarkany" => "baby orange dragon",
+ "baby sirrush" => "baby black dragon",
+ "baby leviathan" => "baby blue dragon",
+ "baby wyvern" => "baby green dragon",
+ "baby guivre" => "baby yellow dragon",
+ "tatzelworm" => "gray dragon",
+ "amphitere" => "silver dragon",
+ "draken" => "red dragon",
+ "lindworm" => "white dragon",
+ "sarkany" => "orange dragon",
+ "sirrush" => "black dragon",
+ "leviathan" => "blue dragon",
+ "wyvern" => "green dragon",
+ "guivre" => "yellow dragon",
+ "tatzelworm scale mail / magic dragon scale mail" => "gray dragon scale mail",
+ "amphitere scale mail / reflecting dragon scale mail" => "silver dragon scale mail",
+ "draken scale mail / fire dragon scale mail" => "red dragon scale mail",
+ "lindworm scale mail / ice dragon scale mail" => "white dragon scale mail",
+ "sarkany scale mail / sleep dragon scale mail" => "orange dragon scale mail",
+ "sirrush scale mail / disintegration dragon scale mail" => "black dragon scale mail",
+ "leviathan scale mail / electric dragon scale mail" => "blue dragon scale mail",
+ "wyvern scale mail / poison dragon scale mail" => "green dragon scale mail",
+ "guivre scale mail / acid dragon scale mail" => "yellow dragon scale mail",
+ "tatzelworm scales / magic dragon scales" => "gray dragon scales",
+ "amphitere scales / reflecting dragon scales" => "silver dragon scales",
+ "draken scales / fire dragon scales" => "red dragon scales",
+ "lindworm scales / ice dragon scales" => "white dragon scales",
+ "sarkany scales / sleep dragon scales" => "orange dragon scales",
+ "sirrush scales / disintegration dragon scales" => "black dragon scales",
+ "leviathan scales / electric dragon scales" => "blue dragon scales",
+ "wyvern scales / poison dragon scales" => "green dragon scales",
+ "guivre scales / acid dragon scales" => "yellow dragon scales",
+ "viscous potion / levitation" => "cyan potion - levitation",
+ "indigo potion / invisibility" => "brilliant blue potion - invisibility",
+ "amber potion / healing" => "purple-red potion - healing",
+ "AQUE BRAGH / flood" => "DUAM XNAHT - amnesia",
+]
+
 def normalize(string)
+	return @synonyms[string.strip] if @synonyms.has_key? string.strip
 	return string.sub(" / ", " - ").strip
 end
 
 # TODO command line options
-names = File.new("lists/nethack.txt").readlines
-dir = "tilesets/chozo32"
+names = File.new("lists/unnethack.txt").readlines
+dir = "tilesets/unchozo32b"
 format = ".png"
 
 imageListVertical = Magick::ImageList.new
@@ -28,4 +72,4 @@ for i in 0..29
 end
 
 image = imageListVertical.append(true)
-image.write "chozo32.png"
+image.write "unchozo32b.png"
