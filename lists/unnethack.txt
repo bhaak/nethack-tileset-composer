@@ -958,6 +958,7 @@ closed door (vertical)
 closed door (horizontal)
 iron bars
 tree
+dead tree
 floor of a room
 dark part of a room
 corridor
