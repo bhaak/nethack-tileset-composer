@@ -24,6 +24,7 @@ require 'RMagick'
  "leviathan" => "blue dragon",
  "wyvern" => "green dragon",
  "guivre" => "yellow dragon",
+ "chromatic dragon" => "Chromatic Dragon",
  "tatzelworm scale mail / magic dragon scale mail" => "gray dragon scale mail",
  "amphitere scale mail / reflecting dragon scale mail" => "silver dragon scale mail",
  "draken scale mail / fire dragon scale mail" => "red dragon scale mail",
