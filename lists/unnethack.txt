@@ -157,6 +157,7 @@ leviathan
 wyvern
 gold dragon
 guivre
+chromatic dragon
 stalker
 air elemental
 fire elemental
@@ -257,6 +258,7 @@ ghoul
 skeleton
 straw golem
 paper golem
+wax golem
 rope golem
 gold golem
 leather golem
@@ -496,6 +498,7 @@ leviathan scale mail / electric dragon scale mail
 wyvern scale mail / poison dragon scale mail
 gold dragon scale mail / stone dragon scale mail
 guivre scale mail / acid dragon scale mail
+chromatic dragon scale mail / chromatic dragon scale mail
 tatzelworm scales / magic dragon scales
 amphitere scales / reflecting dragon scales
 shimmering dragon scales
@@ -507,6 +510,7 @@ leviathan scales / electric dragon scales
 wyvern scales / poison dragon scales
 gold dragon scales / stone dragon scales
 guivre scales / acid dragon scales
+chromatic dragon scales / chromatic dragon scales
 plate mail
 crystal plate mail
 bronze plate mail
