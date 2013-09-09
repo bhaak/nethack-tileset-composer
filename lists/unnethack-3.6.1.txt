@@ -5,7 +5,6 @@ fire ant
 snow ant
 giant beetle
 queen bee
-locust
 acid blob
 quivering blob
 gelatinous cube
@@ -80,7 +79,6 @@ Mordor orc
 Uruk-hai
 orc shaman
 orc-captain
-deep orc
 rock piercer
 iron piercer
 glass piercer
@@ -95,8 +93,6 @@ sewer rat
 giant rat
 rabid rat
 wererat (beast)
-enormous rat
-rodent of unusual size
 rock mole
 woodchuck
 cave spider
@@ -117,24 +113,21 @@ ice vortex
 energy vortex
 steam vortex
 fire vortex
+anti-matter vortex
 baby long worm
 baby purple worm
 long worm
 purple worm
 grid bug
 xan
-chillbug
 yellow light
 black light
 zruty
 couatl
 Aleax
 Angel
-black Angel
 ki-rin
 Archon
-weeping angel
-weeping archangel
 bat
 giant bat
 raven
@@ -164,7 +157,6 @@ leviathan
 wyvern
 gold dragon
 guivre
-chromatic dragon
 stalker
 air elemental
 fire elemental
@@ -212,12 +204,10 @@ red naga hatchling
 black naga hatchling
 golden naga hatchling
 guardian naga hatchling
-white naga hatchling
 red naga
 black naga
 golden naga
 guardian naga
-white naga
 ogre
 ogre lord
 ogre king
@@ -225,7 +215,6 @@ gray ooze
 brown pudding
 black pudding
 green slime
-blue slime
 quantum mechanic
 rust monster
 disenchanter
@@ -268,7 +257,6 @@ ghoul
 skeleton
 straw golem
 paper golem
-wax golem
 rope golem
 gold golem
 leather golem
@@ -278,11 +266,7 @@ clay golem
 stone golem
 glass golem
 iron golem
-ice golem
-crystal ice golem
 human
-miner
-prison guard
 wererat (human)
 werejackal (human)
 werewolf (human)
@@ -297,7 +281,6 @@ mugger
 nurse
 shopkeeper
 black marketeer
-One-eyed Sam
 guard
 prisoner
 Oracle
@@ -313,11 +296,9 @@ Medusa
 Wizard of Yendor
 Croesus
 Charon
-Executioner
 ghost
 shade
 water demon
-lava demon
 horned devil
 succubus
 incubus
@@ -366,7 +347,6 @@ archeologist
 barbarian
 caveman
 cavewoman
-convict
 healer
 knight
 monk
@@ -383,7 +363,6 @@ Pelias
 Shaman Karnov
 Earendil
 Elwing
-Robert the Lifer
 Hippocrates
 King Arthur
 Grand Master
@@ -396,9 +375,8 @@ Norn
 Neferet the Green
 Minion of Huhetotl
 Thoth Amon
-Tiamat
+Chromatic Dragon
 Goblin King
-Warden Arianna
 Cyclops
 Ixoth
 Master Kaen
@@ -412,7 +390,6 @@ student
 chieftain
 neanderthal
 High-elf
-inmate
 attendant
 page
 abbot
@@ -519,7 +496,6 @@ leviathan scale mail / electric dragon scale mail
 wyvern scale mail / poison dragon scale mail
 gold dragon scale mail / stone dragon scale mail
 guivre scale mail / acid dragon scale mail
-chromatic dragon scale mail / chromatic dragon scale mail
 tatzelworm scales / magic dragon scales
 amphitere scales / reflecting dragon scales
 shimmering dragon scales
@@ -531,7 +507,6 @@ leviathan scales / electric dragon scales
 wyvern scales / poison dragon scales
 gold dragon scales / stone dragon scales
 guivre scales / acid dragon scales
-chromatic dragon scales / chromatic dragon scales
 plate mail
 crystal plate mail
 bronze plate mail
@@ -548,7 +523,6 @@ crude ring mail / orcish ring mail
 leather armor
 leather jacket
 Hawaiian shirt
-striped shirt
 T-shirt
 mummy wrapping
 faded pall / elven cloak
@@ -691,7 +665,6 @@ bugle
 drum / leather drum
 drum / drum of earthquake
 pick-axe
-crystal pick
 iron hook / grappling hook
 unicorn horn
 candelabrum / Candelabrum of Invocation
@@ -959,7 +932,6 @@ gray gem / luckstone
 gray gem / loadstone
 gray gem / touchstone
 gray gem / flint
-silvery metal stone / small piece of unrefined mithril
 rock
 boulder
 statue
@@ -967,7 +939,6 @@ heavy iron ball
 iron chain
 splash of venom / blinding venom
 splash of venom / acid venom
-freezing ice / splash of ice
 unexplored area
 wall 0
 wall 1
@@ -1003,7 +974,6 @@ sink
 fountain
 water (pool)
 ice
-muddy swamp
 molten lava
 lowered drawbridge (vertical)
 lowered drawbridge (horizontal)
@@ -1011,8 +981,6 @@ raised drawbridge (vertical)
 raised drawbridge (horizontal)
 air
 cloud
-ice wall
-crystal ice wall
 water (under water)
 arrow trap
 dart trap
@@ -1035,7 +1003,6 @@ web
 statue trap
 magic trap
 anti-magic field
-ice trap
 polymorph trap
 vertical beam
 horizontal beam
