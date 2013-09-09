@@ -47,6 +47,11 @@ require 'RMagick'
  "indigo potion / invisibility" => "brilliant blue potion - invisibility",
  "amber potion / healing" => "purple-red potion - healing",
  "AQUE BRAGH / flood" => "DUAM XNAHT - amnesia",
+
+ "glowing dragon scale mail / stone dragon scale mail" => "gold dragon scale mail - stone dragon scale mail",
+ "glowing dragon scales / stone dragon scales" => "gold dragon scales - stone dragon scales",
+ "baby glowing dragon" => "baby gold dragon",
+ "glowing dragon" => "gold dragon",
 ]
 
 def normalize(string)
@@ -66,8 +71,12 @@ for i in 0..29
 		name = names[i*40+j]
 		if name != nil then
 			filename = dir+"/"+normalize(name)+format
-			raise "Image #{filename} doesn't exist! " if not FileTest.exists?("#{filename}")
-			imageListHorizontal.read filename
+			if not FileTest.exists?("#{filename}") then
+				puts "Image #{filename} doesn't exist! "
+				imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'black' }
+			else
+				imageListHorizontal.read filename
+			end
 		else
 			imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'black' }
 		end

@@ -34,6 +34,7 @@ freezing sphere
 flaming sphere
 shocking sphere
 beholder
+evil eye
 kitten
 housecat
 jaguar
@@ -57,6 +58,7 @@ imp
 lemure
 quasit
 tengu
+uranium imp
 blue jelly
 spotted jelly
 ochre jelly
@@ -130,7 +132,7 @@ zruty
 couatl
 Aleax
 Angel
-black Angel
+dark Angel
 ki-rin
 Archon
 weeping angel
@@ -151,7 +153,7 @@ baby sarkany
 baby sirrush
 baby leviathan
 baby wyvern
-baby gold dragon
+baby glowing dragon
 baby guivre
 tatzelworm
 amphitere
@@ -162,7 +164,7 @@ sarkany
 sirrush
 leviathan
 wyvern
-gold dragon
+glowing dragon
 guivre
 chromatic dragon
 stalker
@@ -242,6 +244,7 @@ rock troll
 water troll
 Olog-hai
 umber hulk
+shambling horror
 vampire
 vampire lord
 vampire mage
@@ -424,6 +427,13 @@ roshi
 guide
 warrior
 apprentice
+Punisher
+dungeon fern
+dungeon fern sprout
+dungeon fern spore
+arctic fern
+arctic fern sprout
+arctic fern spore
 invisible monster
 strange object
 arrow
@@ -517,7 +527,7 @@ sarkany scale mail / sleep dragon scale mail
 sirrush scale mail / disintegration dragon scale mail
 leviathan scale mail / electric dragon scale mail
 wyvern scale mail / poison dragon scale mail
-gold dragon scale mail / stone dragon scale mail
+glowing dragon scale mail / stone dragon scale mail
 guivre scale mail / acid dragon scale mail
 chromatic dragon scale mail / chromatic dragon scale mail
 tatzelworm scales / magic dragon scales
@@ -529,7 +539,7 @@ sarkany scales / sleep dragon scales
 sirrush scales / disintegration dragon scales
 leviathan scales / electric dragon scales
 wyvern scales / poison dragon scales
-gold dragon scales / stone dragon scales
+glowing dragon scales / stone dragon scales
 guivre scales / acid dragon scales
 chromatic dragon scales / chromatic dragon scales
 plate mail
