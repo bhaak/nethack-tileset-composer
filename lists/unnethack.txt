@@ -434,6 +434,16 @@ dungeon fern spore
 arctic fern
 arctic fern sprout
 arctic fern spore
+blazing fern
+blazing fern sprout
+blazing fern spore
+swamp fern
+swamp fern sprout
+swamp fern spore
+fern spore
+Devil's Snare
+Durin's Bane
+Watcher in the Water
 invisible monster
 strange object
 arrow
