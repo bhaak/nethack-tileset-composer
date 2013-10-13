@@ -315,8 +315,8 @@ watch captain
 Medusa
 Wizard of Yendor
 Croesus
-Charon
 Executioner
+Charon
 ghost
 shade
 water demon
