@@ -73,7 +73,7 @@ for i in 0..(names.size/40)
 			filename = dir+"/"+normalize(name)+format
 			if not FileTest.exists?("#{filename}") then
 				puts "Image #{filename} doesn't exist! "
-				imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'black' }
+				imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'yellow' }
 			else
 				imageListHorizontal.read filename
 			end
