@@ -65,7 +65,7 @@ dir = "tilesets/unchozo32b"
 format = ".png"
 
 imageListVertical = Magick::ImageList.new
-for i in 0..29
+for i in 0..(names.size/40)
 	imageListHorizontal = Magick::ImageList.new
 	for j in 0..39
 		name = names[i*40+j]
