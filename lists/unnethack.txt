@@ -98,7 +98,6 @@ giant rat
 rabid rat
 wererat (beast)
 enormous rat
-rodent of unusual size
 rock mole
 woodchuck
 cave spider
