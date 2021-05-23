@@ -3,7 +3,7 @@
 require 'rubygems'
 require "bundler/setup"
 
-require 'RMagick'
+require 'rmagick'
 
 @synonyms = Hash[
  "baby tatzelworm" => "baby gray dragon",
