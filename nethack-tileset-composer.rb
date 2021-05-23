@@ -25,6 +25,31 @@ require 'rmagick'
   "wyvern" => "green dragon",
   "guivre" => "yellow dragon",
   "chromatic dragon" => "Chromatic Dragon",
+  "baby glowing dragon" => "baby gold dragon",
+  "glowing dragon" => "gold dragon",
+
+  "baby tatzelworm (statue)" => "baby gray dragon (statue)",
+  "baby amphitere (statue)" => "baby silver dragon (statue)",
+  "baby draken (statue)" => "baby red dragon (statue)",
+  "baby lindworm (statue)" => "baby white dragon (statue)",
+  "baby sarkany (statue)" => "baby orange dragon (statue)",
+  "baby sirrush (statue)" => "baby black dragon (statue)",
+  "baby leviathan (statue)" => "baby blue dragon (statue)",
+  "baby wyvern (statue)" => "baby green dragon (statue)",
+  "baby guivre (statue)" => "baby yellow dragon (statue)",
+  "tatzelworm (statue)" => "gray dragon (statue)",
+  "amphitere (statue)" => "silver dragon (statue)",
+  "draken (statue)" => "red dragon (statue)",
+  "lindworm (statue)" => "white dragon (statue)",
+  "sarkany (statue)" => "orange dragon (statue)",
+  "sirrush (statue)" => "black dragon (statue)",
+  "leviathan (statue)" => "blue dragon (statue)",
+  "wyvern (statue)" => "green dragon (statue)",
+  "guivre (statue)" => "yellow dragon (statue)",
+  "chromatic dragon (statue)" => "Chromatic Dragon (statue)",
+  "baby glowing dragon (statue)" => "baby gold dragon (statue)",
+  "glowing dragon (statue)" => "gold dragon (statue)",
+
   "tatzelworm scale mail / magic dragon scale mail" => "gray dragon scale mail",
   "amphitere scale mail / reflecting dragon scale mail" => "silver dragon scale mail",
   "draken scale mail / fire dragon scale mail" => "red dragon scale mail",
@@ -59,10 +84,9 @@ require 'rmagick'
 
   "glowing dragon scale mail / stone dragon scale mail" => "gold dragon scale mail - stone dragon scale mail",
   "glowing dragon scales / stone dragon scales" => "gold dragon scales - stone dragon scales",
-  "baby glowing dragon" => "baby gold dragon",
-  "glowing dragon" => "gold dragon",
 
   "Anaraxis the Black" => "Dark One",
+  "Anaraxis the Black (statue)" => "Dark One (statue)",
 
   "swallow top left" => "swallow top-left",
   "swallow top center" => "swallow top",
@@ -75,8 +99,8 @@ require 'rmagick'
 ]
 
 def normalize(string)
-	return @synonyms[string.strip] if @synonyms.has_key? string.strip
-	return string.sub(" / ", " - ").strip
+  return @synonyms[string.strip] if @synonyms.has_key? string.strip
+  return string.sub(" / ", " - ").strip
 end
 
 # TODO command line options
@@ -86,22 +110,27 @@ format = ".png"
 
 imageListVertical = Magick::ImageList.new
 for i in 0..(names.size/40)
-	imageListHorizontal = Magick::ImageList.new
-	for j in 0..39
-		name = names[i*40+j]
-		if name != nil then
-			filename = dir+"/"+normalize(name)+format
-			if not FileTest.exists?("#{filename}") then
-				puts "Image #{filename} doesn't exist! "
-				imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'yellow' }
-			else
-				imageListHorizontal.read filename
-			end
-		else
-			imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'black' }
-		end
-	end
-	imageListVertical << imageListHorizontal.append(false) if imageListHorizontal.length > 0
+  imageListHorizontal = Magick::ImageList.new
+  for j in 0..39
+    name = names[i*40+j]
+    if name != nil then
+      filename = dir+"/"+normalize(name)+format
+      if !FileTest.exists?("#{filename}") then
+        if name.strip.end_with?(" (statue)")
+          image = Magick::Image.read(filename.split(" (statue)").join).first
+          imageListHorizontal << image.quantize(256, Magick::GRAYColorspace)
+        else
+          puts "Image #{filename} doesn't exist! "
+          imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'yellow' }
+        end
+      else
+        imageListHorizontal.read filename
+      end
+    else
+      imageListHorizontal << Magick::Image.new(32, 32) { self.background_color = 'black' }
+    end
+  end
+  imageListVertical << imageListHorizontal.append(false) if imageListHorizontal.length > 0
 end
 
 image = imageListVertical.append(true)
