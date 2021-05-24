@@ -104,9 +104,11 @@ def normalize(string)
 end
 
 # TODO command line options
-names = File.new("lists/unnethack.txt").readlines
+list = "lists/unnethack.txt"
+names = File.new(list).readlines
 dir = "tilesets/unchozo32b"
 format = ".png"
+output_name = [list.split(/(?:\.txt|\/)/).last, "-", dir.split("/").last, format].join
 
 imageListVertical = Magick::ImageList.new
 for i in 0..(names.size/40)
@@ -134,4 +136,4 @@ for i in 0..(names.size/40)
 end
 
 image = imageListVertical.append(true)
-image.write "unchozo32b.png"
+image.write output_name
